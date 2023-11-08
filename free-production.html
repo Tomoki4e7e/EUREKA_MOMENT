@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>株式会社EUREKA MOMENT</title>
+    <link rel="stylesheet" type="text/css" href="free-production.css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Heebo:wght@500;700&family=Poppins:wght@400;500&family=Puritan:wght@700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>    
+    <header class = "header_top">
+        <div class = "company_title">
+            <p class = "logo">EM</p>
+            <h1 class = "name_of_company">EUREKA MOMENT</h1>
+        </div>
+        <a class = "contact">Contact</a>
+        <a class = "menu_iphone">menu</a>
+    </header>
+    <ul class = "menu_list">
+        <li class = "list_item">企業理念</li>
+        <li class = "list_item">企業情報</li>
+        <li class = "list_item">制作実績</li>
+        <li class = "list_item">お知らせ</li>
+    </ul>
+    <div class = "_home">
+        <div class = "home1"></div>
+        <div class = "home2"></div>
+        <div class = "home3"></div>
+        <p class = "title_">EUREKA MOMENT</p>
+        <p class = "subtitle_">デザインで新しい流れを生み出す</p>
+    </div>  
+    <div class = "_home">
+        <div class = "midasi1"></div>
+        <div class = "midasi2"></div>
+        <div class = "midasi3"></div>
+        <h2 class = "top_midasi">企業理念</h2>
+        <h3 class = "sub_midasi">Philosophy</h3>
+        <p class = "catch_phrase">"創造性の未来をデザインする"</p>
+        <p class = "statement">我々は、創造性と新規性を重視し、お客様に印象的で革新的なデザインを提供することを使命としています。私たちは、デザインがビジネスや生活に与える影響を理解し、それを通じて未来をデザインします。</p>
+    </div>
+    <div class = "menu_background">
+        <div class = "menu">
+            <div class = "menu_detail">
+                <div class = "pic_1">
+                    <img class="pic_1_" src = "images/27824641200_cc772d3bf8.jpg">
+                </div>
+                <p class = "_title">企業情報</p>
+                <a class = "futher_detail">さらに詳しく</a>
+            </div>
+            <div class = "menu_detail">
+                <div class = "pic_1">
+                    <img class="pic_1_" src = "images/AdobeStock_171294812.jpg">
+                </div>
+                <p class = "_title">採用情報</p>
+                <a class = "futher_detail">さらに詳しく</a>
+            </div>
+            <div class = "menu_detail">
+                <div class = "pic_1">
+                    <img class="pic_1_" src = "images/art fair.jpg">
+                </div>
+                <p class = "_title">制作実績</p>
+                <a class = "futher_detail">さらに詳しく</a>
+            </div>
+        </div>
+    </div>
+    <div class = "_saiyoujyouhou">
+        <div class = "saiyoujyouhou">
+            <ul>
+                <li class = "background_word">
+                    EUREKA MOMENT
+                </li>
+            </ul>
+            <ul>
+                <li class = "background_word">
+                    EUREKA MOMENT
+                </li>
+            </ul>
+            <ul>
+                <li class = "background_word">
+                    EUREKA MOMENT
+                </li>
+            </ul>
+        </div>
+    
+    <div class = "_saiyoujyouhou_">
+        <p class = "RECRUIT">RECRUIT</p>
+        <div class="office_woman"></div>
+    </div>
+    </div>
+    <div class = "seisakujisseki">
+        <div class = "midasi_">
+            <h4 class = "top_midasi">制作実績</h4>
+            <h5 class = "sub_midasi">Production Achivement</h5>
+            <a class = "futher_detail_">さらに詳しく</a>
+        </div>
+        <div class = "irasuto"></div>
+    </div>
+    <footer>
+        <ul class = "menu_list_">
+            <li class = "list_item_">企業理念</li>
+            <li class = "list_item_">企業情報</li>
+            <li class = "list_item_">制作実績</li>
+            <li class = "list_item_">お知らせ</li>
+        </ul>
+        <p class = "footer_title">EUREKA MOMENT</p>
+        <a class = "otoiawase">お問い合わせ</a>
+    </footer>
+    <script>
+        {
+        let targets = document.querySelectorAll('.top_midasi,.sub_midasi,.catch_phrase,.statement,.pic_1,._title,.futher_detail,.futher_detail_,.menu_detail,.RECRUIT'); //アニメーションさせたい要素
+            //スクロールイベント
+            window.addEventListener('scroll', function () {
+              var scroll = window.scrollY; //スクロール量を取得
+              var windowHeight = window.innerHeight; //画面の高さを取得
+              for (let target of targets) { //ターゲット要素がある分、アニメーション用のクラスをつける処理を繰り返す
+                var targetPos = target.getBoundingClientRect().top + scroll; //ターゲット要素の位置を取得
+                if (scroll > targetPos - windowHeight) { //スクロール量 > ターゲット要素の位置
+                  target.classList.add('is-animated'); //is-animatedクラスを加える
+                }
+              }
+            });
+        let targets_ = document.querySelectorAll('.office_woman'); //アニメーションさせたい要素
+            //スクロールイベント
+            window.addEventListener('scroll', function () {
+              var scroll = window.scrollY; //スクロール量を取得
+              var windowHeight = window.innerHeight; //画面の高さを取得
+              for (let target_ of targets_) { //ターゲット要素がある分、アニメーション用のクラスをつける処理を繰り返す
+                var targetPos_ = target_.getBoundingClientRect().top + scroll; //ターゲット要素の位置を取得
+                if (scroll > targetPos_ - windowHeight) { //スクロール量 > ターゲット要素の位置
+                  target_.classList.add('is-focused'); //is-animatedクラスを加える
+                }
+              }
+            });
+            let _targets = document.querySelectorAll('.statement'); //アニメーションさせたい要素
+            let _targets_ = document.querySelectorAll('.company_title');
+            //スクロールイベント
+            window.addEventListener('scroll', function () {
+              var scroll = window.scrollY; //スクロール量を取得
+              var windowHeight = window.innerHeight; //画面の高さを取得
+              for (let target of _targets) { //ターゲット要素がある分、アニメーション用のクラスをつける処理を繰り返す
+                var targetPos = target.getBoundingClientRect().top + scroll; //ターゲット要素の位置を取得
+                if (scroll > targetPos - windowHeight) { //スクロール量 > ターゲット要素の位置
+                    for (let _target_ of _targets_) {
+                    _target_.classList.add('add'); //is-animatedクラスを加える
+                }
+            }
+              }
+            });  
+        }
+    </script>
+</body>
+</html>
